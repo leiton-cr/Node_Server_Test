@@ -1,0 +1,14 @@
+
+GET http://localhost:5505/test
+
+###
+
+POST http://localhost:5505/test
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+
