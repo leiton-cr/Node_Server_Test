@@ -11,12 +11,13 @@ export default class TestRouter {
         this.#router = express.Router();
 
         this.#router.get('/', ( async (req, res) => {
-            const users = await this.#controller.getUsers();
-            res.status(200).json(users);
+            //const users = await this.#controller.getUsers();
+            //res.status(200).json(users);
+            res.status(200).json({ state: "success" })
         }))
 
         this.#router.post('/', ((req, res) => {
-            this.#controller.insertUser(req.body.name);
+            //this.#controller.insertUser(req.body.name);
             res.status(200).json({ state: "success" });
         }))
 
